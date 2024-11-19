@@ -1,0 +1,41 @@
+
+.hero-section {
+  background: url('./assets/gfd.webp') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  
+
+}
+
+
+.hero-section h1 {
+  font-family: 'Georgia', serif;  
+  font-weight: bold;
+  font-size: 4rem;
+  color: #FFD700; 
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); 
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-weight: 900; 
+  animation: moveText 3s infinite alternate;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translate(-50%, -50%) translateY(-20px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(20px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
