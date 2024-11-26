@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import Navbar from './components/Navbar';
 import MenuSection from './components/MenuSection';
@@ -12,7 +11,7 @@ function App() {
       <Navbar />
       <div className="hero-section">
         <section id="home">
-          <h1 className="welcome-text">Welcome to Ayda Restaurant</h1>
+          <h1 className="welcome-text">Welcome to Ayda<br/>Restaurant</h1>
         </section>
       </div>
 

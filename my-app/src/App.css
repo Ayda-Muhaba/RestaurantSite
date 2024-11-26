@@ -1,18 +1,26 @@
-
 .hero-section {
-  background: url('./assets/gfd.webp') no-repeat center center;
+  background-image: url('/src/assets/gfd.webp'); 
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
   height: 100vh;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  
-
+  color: #fff;
+  position: relative;
 }
 
-
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
 .hero-section h1 {
   font-family: 'Georgia', serif;  
   font-weight: bold;
@@ -25,7 +33,9 @@
   transform: translate(-50%, -50%); 
   font-weight: 900; 
   animation: moveText 3s infinite alternate;
+  z-index: 2; 
 }
+
 
 @keyframes moveText {
   0% {

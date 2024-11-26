@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MenuSection.css';
+import '../styles/MenuSection.css';
 
 const menuItems = {
   drinks: [
