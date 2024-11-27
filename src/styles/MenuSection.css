@@ -1,0 +1,153 @@
+.menu-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.category-button.active {
+  background-color: #FFD700; /* Yellow */
+  color: white;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px; /* Increased height for larger images */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.menu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-details {
+  text-align: left;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price-box {
+  font-weight: bold;
+  background-color: #FFD700; /* Yellow */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.current-page {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-items {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .image-container {
+    height: 250px; /* Adjusted for tablets */
+  }
+
+  .item-name {
+    font-size: 16px;
+  }
+
+  .item-description {
+    font-size: 13px;
+  }
+
+  .price-box {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-items {
+    grid-template-columns: 1fr; /* One item per row on small screens */
+  }
+
+  .image-container {
+    height: 220px; /* Adjusted for mobile */
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+}
+
+
+

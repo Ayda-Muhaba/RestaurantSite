@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem; 
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  background: none; 
+  box-sizing: border-box; 
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 0.5rem;
+  color: #fff;
+  text-align: left;
+  margin-left: 0.5rem; 
+}
+
+.navbar-logo img {
+  width: 200px; 
+  margin: 0;
+  margin-top: -10px; 
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 2rem; 
+  list-style: none;
+  font-size: 1.2em;
+  margin-top: -30px; 
+  box-sizing: border-box;
+}
+
+
+.navbar-links li a {
+  color: azure;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem; 
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.navbar-links li a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .navbar-logo img {
+    width: 150px; 
+  }
+
+  .navbar-links {
+    flex-wrap: nowrap; 
+    justify-content: flex-end;
+    gap: 1.5rem; 
+  }
+
+  .navbar-links li a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-links {
+    gap: 1rem; 
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+
